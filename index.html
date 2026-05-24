@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>جارٍ التوجيه...</title>
+<script>
+  var ua = navigator.userAgent || '';
+  if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+    window.location.replace("https://apps.apple.com/iq/app/rasimati-color-page-%D8%B1%D8%B3%D9%85%D8%AA%D9%8A/id6765882964?l=ar");
+  } else if (/android/i.test(ua)) {
+    // TODO: ضف رابط Play Store هنا لما تنشر
+    document.write("التطبيق قريباً على Google Play! 🎉");
+  } else {
+    window.location.replace("https://apps.apple.com/iq/app/rasimati-color-page-%D8%B1%D8%B3%D9%85%D8%AA%D9%8A/id6765882964?l=ar");
+  }
+</script>
+</head>
+</html>
