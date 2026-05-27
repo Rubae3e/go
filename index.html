@@ -6,11 +6,10 @@
 <title>جارٍ التوجيه...</title>
 <script>
   var ua = navigator.userAgent || '';
-  if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
-    window.location.replace("https://apps.apple.com/iq/app/rasimati-color-page-%D8%B1%D8%B3%D9%85%D8%AA%D9%8A/id6765882964?l=ar");
-  } else if (/android/i.test(ua)) {
-    // TODO: ضف رابط Play Store هنا لما تنشر
+  if (/android/i.test(ua)) {
     window.location.replace("https://play.google.com/store/apps/details?id=com.rubaee.rasmati&pcampaignid=web_share");
+  } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+    window.location.replace("https://apps.apple.com/iq/app/rasimati-color-page-%D8%B1%D8%B3%D9%85%D8%AA%D9%8A/id6765882964?l=ar");
   } else {
     window.location.replace("https://apps.apple.com/iq/app/rasimati-color-page-%D8%B1%D8%B3%D9%85%D8%AA%D9%8A/id6765882964?l=ar");
   }
